@@ -1,4 +1,7 @@
-const scroll = new SmoothScroll('a[href*="#"]', {
+ const scroll = new SmoothScroll('a[href*="#"]', {
   easing: 'easeInOutQuint',
-  speed: 500
+  speed: 700,
+  speedAsDuration: true,
+  clip: true,
+  offset: -75
 });

@@ -3,6 +3,7 @@ const navList = document.querySelector('.navigation-list');
 const navLinks = document.querySelectorAll('.nav-links');
 const overlay = document.querySelector('#overlay');
 const socialLinks = document.querySelector('#social-links');
+const pageTop = document.querySelector('#home');
 
 function toggleActive(element) {
   element.classList.toggle('active');
@@ -39,3 +40,6 @@ navList.addEventListener('click', (event) => {
   }
 });
 
+function scrollTop() {
+  
+}
