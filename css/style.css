@@ -76,7 +76,13 @@ header {
 }
 
 section {
-  padding: 160px 0 120px 0;
+  padding: 120px 0;
+  margin: 10px;
+  background: #d8d8d8;
+}
+
+#about {
+
 }
 
 #about-title {
