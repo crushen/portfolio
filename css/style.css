@@ -86,7 +86,7 @@ section {
 }
 
 #about-title {
-  width: 335px;
+  width: 420px;
 }
 
 .about-text {
@@ -95,6 +95,7 @@ section {
   font-size: 20px;
   line-height: 30px;
   padding-top: 20px;
+  text-align: center;
 }
 
 .skills-box-container {
