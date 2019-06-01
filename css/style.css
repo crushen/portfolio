@@ -9,18 +9,20 @@ body {
 }
 
 header {
-  height: 100vh;
-  background: url("../img/background.jpg") no-repeat;
+  height: 85vh;
+  /* background: url("../img/background.png") no-repeat center; */
+  background: #72ceea;
 }
 
 #header-title {
-  width: 100%;
+  width: 80%;
   height: 90%;
+  margin: auto;
   color: #FFF;
   font-size: 40px;
   line-height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
