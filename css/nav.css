@@ -6,13 +6,15 @@
   height: 100%;
   transition: 0.2s;
   transition-delay: 1s;
-  z-index: -1;
+  z-index: 2;
+  visibility: hidden;
 }
 
 #overlay.nav-is-active {
   background: rgba(40, 44, 53, 0.8);
   pointer-events: all;
   transition-delay: 0.45s;
+  visibility: visible;
 }
 
 nav {

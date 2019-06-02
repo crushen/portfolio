@@ -21,7 +21,6 @@ hamburger.addEventListener('click', () => {
       addActive(navLinks[i]);
      }
     overlay.classList.add('nav-is-active');
-    overlay.style.zIndex = '2';
     opened = true;
    } else {
       removeActive(hamburger);
@@ -31,7 +30,6 @@ hamburger.addEventListener('click', () => {
         removeActive(navLinks[i]);
       }
       overlay.classList.remove('nav-is-active');
-      overlay.style.zIndex = '-1';
       navList.classList.add('close-nav');
       opened = false;
     }
@@ -46,7 +44,6 @@ navList.addEventListener('click', (event) => {
     for(let i = 0; i < navLinks.length; i++) {
       removeActive(navLinks[i]);
     }
-    overlay.style.zIndex = '-1';
     navList.classList.add('close-nav');
   }
 });
