@@ -21,7 +21,7 @@ hamburger.addEventListener('click', () => {
       addActive(navLinks[i]);
      }
     overlay.classList.add('nav-is-active');
-    overlay.style.zIndex = '1';
+    overlay.style.zIndex = '2';
     opened = true;
    } else {
       removeActive(hamburger);
