@@ -21,7 +21,7 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  transform: translate(-20px, 20px);
+  transform: translate(-25px, 25px);
   z-index: 2;
 }
 
@@ -34,7 +34,6 @@ nav {
   cursor: pointer;
   background: rgba(0,0,0,0);
   border-radius: 50px;
-  border: solid rgba(0,0,0,0) 4px;
   transition: 0.3s;
   transition-delay: 0.6s;
   z-index: 3;
@@ -62,16 +61,15 @@ nav {
 }
 
 .burger-bar::before {
-  top: -10px;
+  top: -9px;
 }
 
 .burger-bar::after {
-  top: 10px;
+  top: 9px;
 }
 
 .hamburger.active {
   border-radius: 5px;
-  box-shadow: none;
   transition: 0.3s;
 }
 
@@ -96,7 +94,7 @@ nav {
   width: 60px;
   height: 60px;
   border-radius: 50px;
-  border: solid black 4px;
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.4);
   list-style: none;
   text-align: center;
   font-size: 20px;
@@ -112,6 +110,13 @@ nav {
   animation-fill-mode: forwards;
   transition: 0.3s;
   transition-delay: 0.45s;
+}
+
+.close-nav {
+  animation-name: closeNav;
+  animation-duration: 0.9s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .navigation-list ul {
@@ -194,13 +199,6 @@ nav {
   }
 }
 
-.close-nav {
-  animation-name: closeNav;
-  animation-duration: 0.9s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
-
 @keyframes openNav {
   0% {
     width: 60px;
@@ -233,25 +231,26 @@ nav {
 
   .navigation-list li {
     font-size: 22px;
-    padding-top: 1em;
+    padding-top: 2em;
   }
+
   #social-links {
-    padding-top: 3em;
+    padding-top: 4em;
   }
   
   @keyframes closeNav {
     0% {
-      width: 90vw;
+      width: 88vw;
       height: 90vh;
       border-radius: 5px;
     }
     25% {
-      width: 90vw;
+      width: 88vw;
       height: 90vh;
       border-radius: 5px;
     }
     50% {
-      width: 90vw;
+      width: 88vw;
       height: 90vh;
       border-radius: 5px;
     }
@@ -283,42 +282,38 @@ nav {
       border-radius: 5px;
     }
     75% {
-      width: 90vw;
+      width: 88vw;
       height: 90vh;
       border-radius: 5px;
     }
     100% {
-      width: 90vw;
+      width: 88vw;
       height: 90vh;
       border-radius: 5px;
     }
   }
 }
 
-/* Small to medium phones */
+/* Medium phones */
 @media only screen and (max-width: 377px) {
 
-  .navigation-list li {
-    font-size: 20px;
-    padding-top: 1em;
-  }
   #social-links {
     padding-top: 3em;
   }
   
   @keyframes closeNav {
     0% {
-      width: 87vw;
+      width: 86vw;
       height: 90vh;
       border-radius: 5px;
     }
     25% {
-      width: 87vw;
+      width: 86vw;
       height: 90vh;
       border-radius: 5px;
     }
     50% {
-      width: 87vw;
+      width: 86vw;
       height: 90vh;
       border-radius: 5px;
     }
@@ -350,12 +345,80 @@ nav {
       border-radius: 5px;
     }
     75% {
-      width: 87vw;
+      width: 86vw;
       height: 90vh;
       border-radius: 5px;
     }
     100% {
-      width: 87vw;
+      width: 86vw;
+      height: 90vh;
+      border-radius: 5px;
+    }
+  }
+}
+
+/* Small phones */
+@media only screen and (max-width: 322px) {
+
+  .navigation-list li {
+    font-size: 20px;
+    padding-top: 1em;
+  }
+
+  #social-links {
+    padding-top: 2em;
+  }
+  
+  @keyframes closeNav {
+    0% {
+      width: 85vw;
+      height: 90vh;
+      border-radius: 5px;
+    }
+    25% {
+      width: 85vw;
+      height: 90vh;
+      border-radius: 5px;
+    }
+    50% {
+      width: 85vw;
+      height: 90vh;
+      border-radius: 5px;
+    }
+    75% {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+    }
+    100% {
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+    }
+  }
+
+  @keyframes openNav {
+    0% {
+      width: 60px;
+      height: 60px;
+    }
+    25% {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+    }
+    50% {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+    }
+    75% {
+      width: 85vw;
+      height: 90vh;
+      border-radius: 5px;
+    }
+    100% {
+      width: 85vw;
       height: 90vh;
       border-radius: 5px;
     }
