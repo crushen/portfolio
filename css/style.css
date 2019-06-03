@@ -12,6 +12,7 @@ header {
   height: 90vh;
   background: url(../img/background.svg) bottom no-repeat;
   background-size: 100%;
+  margin: 10px;
 }
 
 #header-title {
