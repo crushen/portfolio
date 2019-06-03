@@ -10,14 +10,15 @@ body {
 
 header {
   height: 90vh;
-  background: #d9e6ed;
+  background: url(../img/background.svg) bottom no-repeat;
+  background-size: 100%;
 }
 
 #header-title {
   width: 80%;
   height: 100%;
   margin: auto;
-  color: #333;
+  color: #222;
   font-size: 40px;
   line-height: 80px;
   display: flex;
@@ -46,21 +47,37 @@ header {
   line-height: 65px;
   text-decoration: none;
   color: #FFF;
-  border: solid 4px #333;
+  border: solid 4px #222;
   padding: 0 35px;
   z-index: 1;
   transition: 0.3s;
 }
 
 .find-out-btn:hover {
-  color: #333;
+  color: #222;
 }
 
 .btn-bg {
   width: 215px;
   height: 73px;
-  transform: translate(188px, -65px);
+  transform: translate(192px, -62px);
   z-index: 0;
+}
+
+.hex-container {
+  transform: translate(800px, -300px);
+}
+
+.hex-1 {
+  width: 175px;
+}
+
+.hex-2 {
+  width: 225px;
+}
+
+.hex-3 {
+  width: 125px;
 }
 
 .sub-title {
