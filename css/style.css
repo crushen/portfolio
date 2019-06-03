@@ -9,10 +9,9 @@ body {
 }
 
 header {
-  height: 90vh;
+  height: 100vh;
   background: url(../img/background.svg) bottom no-repeat;
   background-size: 100%;
-  margin: 10px;
 }
 
 #header-title {
@@ -89,9 +88,8 @@ header {
 }
 
 section {
-  padding: 120px 0;
+  padding: 140px 0;
   margin: 10px;
-  background: #d8d8d8;
 }
 
 #about-title {
@@ -120,7 +118,18 @@ section {
   line-height: 25px;
   margin-top: 160px;
   padding-bottom: 30px;
-  border-bottom: 3px solid green;
+}
+
+.skills-box:first-child {
+  border-bottom: 5px solid #109ee5;
+}
+
+.skills-box:nth-child(2) {
+  border-bottom: 5px solid #f2515d;
+}
+
+.skills-box:last-child {
+  border-bottom: 5px solid #995dce;
 }
 
 .skills-box h3 {
