@@ -9,11 +9,11 @@ body {
 }
 
 header {
-  height: 90vh;
+  height: 100vh;
   background: url(../img/bg-09.png) bottom no-repeat;
   background-size: 100%;
   background-color: #d8eaf8;
-  margin: 15px;
+
 }
 
 #header-title {
@@ -122,8 +122,8 @@ margin-bottom: 25px;
 transition: 0.2s;
 }
 
-.line:hover {
-  width: 60%;
+.line-expand {
+  width: 40%;
 }
 
 .line-1 {
