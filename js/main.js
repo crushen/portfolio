@@ -3,6 +3,5 @@ const scroll = new SmoothScroll('a[href*="#"]', {
    speed: 700,
    speedAsDuration: true,
    clip: true,
-   offset: 10 
+  offset: 15
  });
- 
