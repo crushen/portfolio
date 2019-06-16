@@ -18,3 +18,4 @@ for (let i = 0; i < skillsBox.length; i++) {
    skillsBox[i].addEventListener('mouseout', () => {
       line[i].classList.remove('line-expand');
    });
+}
