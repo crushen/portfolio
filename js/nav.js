@@ -46,4 +46,5 @@ navList.addEventListener('click', (event) => {
     }
     navList.classList.add('close-nav');
   }
+  opened = false;
 });
