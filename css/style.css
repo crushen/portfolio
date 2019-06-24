@@ -12,7 +12,7 @@ header {
   height: 100vh;
   background: url(../img/bg-09.png) bottom no-repeat;
   background-size: 100%;
-  background-color: #d8eaf8;
+  /* background-color: #d8eaf8; */
 
 }
 
@@ -75,12 +75,10 @@ header {
   margin: auto;
 }
 
-section {
-  margin: 15px;
-}
+
 
 #about { 
-  padding: 150px 0;
+  padding: 140px 0 80px 0;
   /* background: #f1f1f1; */
 }
 
@@ -164,6 +162,54 @@ transition: 0.2s;
 .skills-text {
   margin-top: 20px;
   color: #444;
+}
+
+#questions {
+  font-size: 22px;
+  /* background: #f2f2f2; */
+  /* border-top: solid 1px #e2e2e2;
+  border-bottom: solid 1px #e2e2e2; */
+  height: 30vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 40px;
+}
+
+#questions p:first-child {
+  font-weight: 700;
+}
+
+#questions p:nth-child(2) {
+  font-weight: 300;
+  color: #444;
+}
+
+.questions-text {
+  margin-right: 60px;
+  margin-left: 186px;
+}
+
+#questions a {
+  border: solid 4px #222;
+  padding: 10px 35px;
+  color: #FFF;
+  text-decoration: none;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+#questions a:hover {
+  color: #222;
+}
+
+.btn-bg-contact{
+  width: 197px;
+  height: 68px;
+  background: #0e9ee5;
+  transform: translate(-186px, 11px);
+  z-index: 0;
 }
 
 #portfolio {
