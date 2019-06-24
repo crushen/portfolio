@@ -125,7 +125,7 @@ transition: 0.2s;
 }
 
 .line-1 {
-  background: #10a0bc;
+  background: #0e9ee5;
 }
 
 .line-2 {
@@ -213,7 +213,7 @@ transition: 0.2s;
 }
 
 #portfolio {
-  padding: 150px 0;
+  padding: 140px 0;
   /* background: #d8eaf8; */
 }
 
@@ -221,7 +221,7 @@ transition: 0.2s;
   width: 175px;
 }
 
-.portfolio-item {
+/* .portfolio-item {
   width: 60%;
   max-width: 650px;
   margin: 60px auto 0 auto;
@@ -265,7 +265,7 @@ transition: 0.2s;
 
 .portfolio-item-link a {
   color: blue;
-}
+} */
 
 
 
@@ -328,3 +328,73 @@ transition: 0.2s;
   font-weight: 700;
   margin-bottom: 10px;
 }
+
+#contact {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 140px 0;
+  font-size: 16px;
+}
+
+#contact a:first-child {
+  text-decoration: none;
+  color: #f2515d;
+  transition: 0.3s;
+}
+
+#contact a:first-child:hover {
+  color: #0e9ee5;
+}
+
+.form-container {
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  color: #444;
+  margin-top: 50px;
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  resize: vertical;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: #444;
+  margin-top: 16px;
+  border: solid 3px #e0e0e0;
+}
+
+#submit-btn {
+  border: solid 4px #222;
+  color: #FFF;
+  padding: 15px 35px;
+  margin-top: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 22px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  position: absolute;
+  z-index: 1;
+}
+.submit-bg {
+  width: 147px;
+  height: 60px;
+  background: #995dce;
+  transform: translate(10px, 26px);
+  position: relative;
+  z-index: 0;
+}
+
+#submit-btn:hover {
+  color: #222;
+}
+
