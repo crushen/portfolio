@@ -167,7 +167,7 @@ transition: 0.2s;
   color: #444;
 }
 
-#questions {
+#cv {
   font-size: 22px;
   background: #f2f2f2;
   /* border-top: solid 1px #e2e2e2;
@@ -180,21 +180,21 @@ transition: 0.2s;
   line-height: 40px;
 }
 
-#questions p:first-child {
+#cv p:first-child {
   font-weight: 700;
 }
 
-#questions p:nth-child(2) {
+#cv p:nth-child(2) {
   font-weight: 300;
   color: #444;
 }
 
-.questions-text {
+.cv-text {
   margin-right: 60px;
   margin-left: 186px;
 }
 
-#questions a {
+#cv a {
   border: solid 4px #222;
   padding: 10px 35px;
   color: #FFF;
@@ -203,16 +203,20 @@ transition: 0.2s;
   z-index: 1;
 }
 
-#questions a:hover {
+#cv a:hover {
   color: #222;
 }
 
-.btn-bg-contact{
+.btn-bg-cv{
   width: 178px;
   height: 68px;
   background: #0e9ee5;
   transform: translate(-166px, 11px);
   z-index: 0;
+}
+
+#cv, #contact {
+  margin: 0 20px;
 }
 
 #portfolio {
@@ -222,6 +226,26 @@ transition: 0.2s;
 
 #portfolio-title {
   width: 175px;
+}
+
+.portfolio-text {
+  max-width: 580px;
+  margin: auto;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 20px 0 10px 0;
+  text-align: center;
+  color: #444;
+}
+
+.portfolio-text a {
+  text-decoration: none;
+  color: #f2515d;
+  transition: 0.3s;
+}
+
+.portfolio-text a:hover {
+  color: #0e9ee5;
 }
 
 /* .portfolio-item {
@@ -401,3 +425,20 @@ input[type=text], input[type=email], textarea {
   color: #222;
 }
 
+footer {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: #222; 
+  font-size: 50px;
+  padding: 0 16px;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #f2515d; 
+}
