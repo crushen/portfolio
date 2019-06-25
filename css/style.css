@@ -428,17 +428,35 @@ input[type=text], input[type=email], textarea {
 footer {
   height: 20vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 footer a {
   color: #222; 
-  font-size: 50px;
+  font-size: 40px;
   padding: 0 16px;
   transition: 0.3s;
 }
 
-footer a:hover {
+footer a:first-child:hover {
   color: #f2515d; 
+}
+
+footer a:nth-child(2):hover {
+  color: #10a0bc; 
+}
+
+footer a:nth-child(3):hover {
+  color: #995dce; 
+}
+
+footer a:last-child:hover {
+  color: #0e9ee5; 
+}
+
+footer p {
+  color: #555;
+  margin-top: 32px;
 }
