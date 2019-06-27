@@ -154,7 +154,7 @@ transition: 0.2s;
   line-height: 40px;
 }
 
-#cv p:first-child {
+#cv h3 {
   font-weight: 700;
 }
 
@@ -236,13 +236,13 @@ transition: 0.2s;
 .portfolio-item h3 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 26px;
   margin-bottom: 30px;
 }
 
 .portfolio-item p {
   color: #444;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
 }
 
@@ -291,7 +291,6 @@ transition: 0.2s;
 }
 
 .form-container {
-  padding: 20px;
   width: 80%;
   max-width: 800px;
   color: #444;
@@ -300,12 +299,12 @@ transition: 0.2s;
 
 input[type=text], input[type=email], textarea {
   width: 100%;
-  padding: 20px;
+  padding: 16px;
   border: none;
   box-sizing: border-box;
   margin-bottom: 20px;
   resize: vertical;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   color: #444;
