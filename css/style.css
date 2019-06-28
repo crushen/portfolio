@@ -76,10 +76,6 @@ header {
   padding: 140px 0;
 }
 
-#about-title {
-  width: 420px;
-}
-
 .about-text {
   max-width: 620px;
   margin: auto;
@@ -193,10 +189,6 @@ transition: 0.2s;
 
 #portfolio {
   padding: 140px 0 0 0;
-}
-
-#portfolio-title {
-  width: 175px;
 }
 
 .portfolio-text {
@@ -382,7 +374,8 @@ footer p {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: 40px;
-  margin: auto;
+  width: 100%;
+  text-align: center;
 }
 
 #cv, #contact {
@@ -415,4 +408,197 @@ footer p {
 .link-hover-2:hover {
   color: #f2515d;
   border-bottom: solid 2px #f2515d;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1140px) {
+  /* Header */
+  header {
+    background: none;
+  }
+
+  #header-title {
+    width: 85%;
+    font-size: 22px;
+    line-height: 50px;
+  }
+
+  #header-title h1 {
+    margin: 80px 0 10px 0;
+  }
+
+  .large-title-1 {
+    font-size: 36px;
+    margin-left: 5px;
+  }
+  
+  .large-title-2 {
+    font-size: 36px;
+    margin-left: 0px;
+  }
+  
+  .find-out-btn {
+    margin: 40px 0 0 0;
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0 20px;
+  }
+
+  .btn-bg {
+    width: 160px;
+    height: 58px;
+    transform: translate(10px, -48px);
+  }
+
+  /* About */
+  #about { 
+    padding: 60px 0;
+  }
+
+  .sub-title {
+    font-size: 25px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    line-height: 25px;
+    width: 85%;
+  }
+
+  .skills-box-container {
+    width: 85%;
+    flex-direction: column;
+  }
+  
+  .skills-box {
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 0px;
+  }
+
+  /* CV Download */
+
+  #cv {
+    font-size: 20px;
+    height: 50vh;
+    flex-direction: column;
+    line-height: 25px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  #cv p:nth-child(2) {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .cv-text {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 40px 16px 32px 16px;
+  }
+
+  #cv a {
+    padding: 10px 30px;
+    font-size: 18px;
+  }
+
+  .btn-bg-cv{
+    width: 150px;
+    height: 53px;
+    transform: translate(10px, -43px);
+  }
+
+  /* Portfolio */
+  #portfolio { 
+    padding: 60px 0;
+  }
+
+  .portfolio-text {
+    font-size: 16px;
+    line-height: 25px;
+    width: 90%;
+  }
+
+  .portfolio-text br{content:' ';}
+  .portfolio-text br:after{content:' ';}
+
+  .portfolio-item {
+    flex-direction: column;
+    width: 85%;
+    margin: 50px auto 0 auto;
+    align-items: center;
+  }
+
+  .p-left {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+
+  .p-left h3 {
+    font-size: 20px;
+  }
+
+  .p-left p {
+    font-size: 16px;
+  }
+  
+  .p-right {
+    width: 100%;
+  }
+
+  .p-right p {
+    font-size: 16px;
+  }
+
+  /* Contact */
+
+  #contact {
+    width: 90%;
+    margin: auto;
+    padding: 60px 0;
+  }
+
+  .form-container {
+    width: 90%;
+    margin-top: 25px;
+  }
+
+  input[type=text], input[type=email], textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  #submit-btn {
+    padding: 12px 30px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .submit-bg {
+    width: 124px;
+    height: 50px;
+    transform: translate(10px, 20px);
+  }
+
+  /* Footer */
+
+  footer {
+    height: 30vh;
+  }
+
+  footer a {
+    font-size: 32px;
+    padding: 0 10px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
 }
