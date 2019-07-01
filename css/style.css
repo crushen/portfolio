@@ -717,6 +717,10 @@ footer p {
 
 @media only screen and (max-width: 530px) {
 
+  header {
+    height: 90vh;
+  }
+
   #header-title {
     width: 75%;
     font-size: 22px;
