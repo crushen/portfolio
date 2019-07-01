@@ -20,10 +20,12 @@
 nav {
   padding: 2em;
   position: fixed;
-  top: 0;
-  right: 0;
-  transform: translate(-25px, 25px);
+  top: 20px;
+  right: 20px;
+  /* transform: translate(-25px, 25px); */
   z-index: 3;
+  transition: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .hamburger {

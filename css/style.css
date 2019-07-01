@@ -162,7 +162,7 @@ transition: 0.2s;
 .cv-text {
   margin-right: 60px;
   margin-left: 186px;
-}
+} 
 
 #cv a {
   border: solid 4px #222;
@@ -412,14 +412,14 @@ footer p {
 
 /* Media queries */
 
-@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 426px) {
   /* Header */
   header {
     background: none;
   }
 
   #header-title {
-    width: 85%;
+    width: 75%;
     font-size: 22px;
     line-height: 50px;
   }
@@ -464,7 +464,11 @@ footer p {
     font-size: 16px;
     line-height: 25px;
     width: 85%;
+    max-width: 280px;
   }
+
+  .about-text br{content:' ';}
+  .about-text br:after{content:' ';}
 
   .skills-box-container {
     width: 85%;
@@ -520,6 +524,7 @@ footer p {
     font-size: 16px;
     line-height: 25px;
     width: 90%;
+    max-width: 340px;
   }
 
   .portfolio-text br{content:' ';}
@@ -590,7 +595,7 @@ footer p {
   /* Footer */
 
   footer {
-    height: 30vh;
+    height: 25vh;
   }
 
   footer a {
@@ -602,3 +607,10 @@ footer p {
     font-size: 14px;
   }
 }
+
+@media only screen and (max-width: 321px) {
+  #header-title {
+    width: 85%;
+  }
+}
+

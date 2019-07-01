@@ -48,3 +48,14 @@ navList.addEventListener('click', (event) => {
   }
   opened = false;
 });
+
+let prevScrollPos = window.pageYOffset;
+  window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+      document.querySelector('nav').style.top = "20px";
+    } else {
+      document.querySelector('nav').style.top = "-70px";
+    }
+    prevScrollPos = currentScrollPos;
+  }
