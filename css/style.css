@@ -196,7 +196,7 @@ transition: 0.2s;
 }
 
 .portfolio-text {
-  max-width: 580px;
+  max-width: 560px;
   margin: auto;
   font-size: 20px;
   line-height: 30px;
@@ -592,9 +592,6 @@ footer p {
     max-width: 500px;
   }
 
-  .about-text br{content:' ';}
-  .about-text br:after{content:' ';}
-
   .skills-box-container {
     width: 85%;
     flex-direction: column;
@@ -639,9 +636,6 @@ footer p {
     line-height: 25px;
     max-width: 450px; 
   }
-
-  .portfolio-text br{content:' ';}
-  .portfolio-text br:after{content:' ';}
 
   .portfolio-item {
     flex-direction: column;
