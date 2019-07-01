@@ -22,7 +22,6 @@ nav {
   position: fixed;
   top: 20px;
   right: 20px;
-  /* transform: translate(-25px, 25px); */
   z-index: 3;
   transition: 0.3s;
   transition-delay: 0.3s;
