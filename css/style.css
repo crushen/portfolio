@@ -17,6 +17,10 @@ header {
   margin: auto;
 }
 
+.hex { 
+  display: none;
+}
+
 #header-title {
   width: 80%;
   height: 100%;
@@ -485,6 +489,35 @@ footer p {
     background: none;
   }
 
+  .hex {
+    display: block;
+    position: absolute;
+  }
+
+  .hex-1 {
+    bottom: 170px;
+    right: 10px;
+    width: 230px;
+  }
+
+  .hex-2 {
+    bottom: 10px;
+    right: 270px;
+    width: 140px;
+  }
+
+  .hex-3 {
+    top: 10px;
+    left: 100px;
+    width: 160px;
+  }
+
+  .hex-4 {
+    top: 180px;
+    left: 10px;
+    width: 100px;
+  }
+
   #header-title {
 
     font-size: 35px;
@@ -509,7 +542,7 @@ footer p {
 @media only screen and (max-width: 800px) {
 
   header {
-    background: none;
+    /* background: none; */
   }
 
   #header-title {
@@ -690,6 +723,29 @@ footer p {
     line-height: 50px;
   }
 
+  .hex-1 {
+    bottom: 100px;
+    right: 5px;
+    width: 120px;
+  }
+
+  .hex-2 {
+    bottom: 5px;
+    right: 100px;
+    width: 100px;
+  }
+
+  .hex-3 {
+    display: none;
+  }
+
+  .hex-4 {
+    top: 30px;
+    left: 10px;
+    width: 100px;
+    transform: rotate(20deg);
+  }
+
   .large-title-1 {
     font-size: 36px;
     margin-left: 5px;
@@ -735,6 +791,16 @@ footer p {
 @media only screen and (max-width: 321px) {
   #header-title {
     width: 85%;
+  }
+
+  .hex-1 {
+    display: none;
+  }
+
+  .hex-2 {
+    bottom: 5px;
+    right: 10px;
+    width: 100px;
   }
 }
 
