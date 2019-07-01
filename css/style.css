@@ -287,6 +287,8 @@ transition: 0.2s;
 }
 
 .form-container {
+  display: flex;
+  flex-direction: column;
   width: 80%;
   max-width: 800px;
   color: #444;
