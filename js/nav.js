@@ -3,6 +3,7 @@ const navList = document.querySelector('.navigation-list');
 const navLinks = document.querySelectorAll('.nav-links');
 const overlay = document.querySelector('#overlay');
 const socialLinks = document.querySelector('#social-links');
+let prevScrollPos = window.pageYOffset;
 let opened = false;
 
 function addActive(element) {
@@ -49,13 +50,21 @@ navList.addEventListener('click', (event) => {
   opened = false;
 });
 
-let prevScrollPos = window.pageYOffset;
-  window.onscroll = function() {
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollPos > currentScrollPos) {
-      document.querySelector('nav').style.top = "20px";
-    } else {
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    document.querySelector('nav').style.top = "20px";
+  } else {
+    if(opened === false) {
       document.querySelector('nav').style.top = "-70px";
+    } else {
+      document.querySelector('nav').style.top = "20px";
     }
-    prevScrollPos = currentScrollPos;
   }
+  prevScrollPos = currentScrollPos;
+}
+
+
+
+
+
