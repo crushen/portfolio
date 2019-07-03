@@ -36,6 +36,32 @@ hamburger.addEventListener('click', () => {
     }
 });
 
+// For accessibility 
+hamburger.addEventListener('keyup', (e) => {
+  if(e.keyCode === 13) {
+    if(!opened) {
+      addActive(hamburger);
+      addActive(navList);
+      addActive(socialLinks);
+      for(let i = 0; i < navLinks.length; i++) {
+        addActive(navLinks[i]);
+      }
+      overlay.classList.add('nav-is-active');
+      opened = true;
+    } else {
+        removeActive(hamburger);
+        removeActive(navList);
+        removeActive(socialLinks);
+        for(let i = 0; i < navLinks.length; i++) {
+          removeActive(navLinks[i]);
+        }
+        overlay.classList.remove('nav-is-active');
+        navList.classList.add('close-nav');
+        opened = false;
+      }
+    }
+});
+
 navList.addEventListener('click', (event) => {
   if(event.target.tagName === 'A') {
     removeActive(hamburger);
