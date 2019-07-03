@@ -264,6 +264,10 @@ nav {
 /* Large phones */
 @media only screen and (max-width: 500px) {
 
+  .navigation-list li {
+    font-size: 22px;
+  }
+
   @keyframes closeNav {
     0% {
       width: calc(100vw - 50px);
