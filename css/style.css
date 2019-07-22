@@ -107,10 +107,10 @@ header {
 }
 
 .line {
-width: 75px;
-height: 10px;
-margin-bottom: 25px;
-transition: 0.2s;
+  width: 75px;
+  height: 10px;
+  margin-bottom: 25px;
+  transition: 0.2s;
 }
 
 .line-1 {
@@ -207,19 +207,20 @@ transition: 0.2s;
 
 .portfolio-item {
   display: flex;
-  width: 80%;
-  max-width: 1196px;
+  width: 65%;
+  max-width: 970px;
+  min-width: 700px;
   margin: 120px auto;
   align-items: center;
 }
 
 .p-left {
   width: 40%;
-  margin-right: 50px;
 }
 
 .p-right {
   width: 60%;
+  text-align: end;
 }
 
 .p-line {
@@ -234,12 +235,22 @@ transition: 0.2s;
   font-weight: 700;
   font-size: 26px;
   margin-bottom: 30px;
+  line-height: 30px;
 }
 
 .portfolio-item p {
   color: #444;
   font-size: 18px;
   line-height: 30px;
+}
+
+.portfolio-img {
+  /* 
+  1237 x 905 firefox
+  cropped to 1230px x 970px
+   */
+  max-width: 475px;
+  width: 90%;
 }
 
 .tech-stack {
@@ -460,25 +471,8 @@ footer p {
     transform: translate(10px, -58px);
   }
 
-  .portfolio-item {
-    flex-direction: column;
-    width: 75%;
-    margin-top: 80px;
-    align-items: center;
-  }
-
-  .p-left {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 16px;
-  }
-
   .p-left h3 {
     font-size: 20px;
-  }
-
-  .p-right {
-    width: 100%;
   }
 
   #contact {
@@ -639,15 +633,16 @@ footer p {
 
   .portfolio-item {
     flex-direction: column;
-    width: 85%;
+    width: 70%;
     margin: 50px auto 0 auto;
     align-items: center;
+    min-width: 1px;
   }
 
   .p-left {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     font-size: 16px;
   }
 
@@ -661,10 +656,16 @@ footer p {
   
   .p-right {
     width: 100%;
+    text-align: center;
   }
 
   .p-right p {
     font-size: 16px;
+  }
+
+  .portfolio-img {
+    width: 100%;
+    max-width: none;
   }
 
   #contact {
@@ -773,6 +774,10 @@ footer p {
     margin-right: 0px;
     margin-left: 0px;
     padding: 20px 10px 30px 10px;
+  }
+
+  .portfolio-item {
+    width: 85%;
   }
 
   .portfolio-text {
