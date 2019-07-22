@@ -576,11 +576,11 @@ footer p {
   }
 
   #about { 
-    padding: 60px 0;
+    padding: 80px 0;
   }
 
   .sub-title {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .about-text {
@@ -625,7 +625,7 @@ footer p {
   }
 
   #portfolio { 
-    padding: 60px 0;
+    padding: 80px 0;
   }
 
   .portfolio-text {
@@ -672,7 +672,7 @@ footer p {
   }
 
   #contact {
-    padding: 60px 0;
+    padding: 80px 0;
   }
 
   .form-container {
@@ -754,10 +754,14 @@ footer p {
     font-size: 36px;
     margin-left: 0px;
   }
-
+  
   .about-text {
     width: 85%;
     max-width: 280px;
+  }
+
+  .sub-title {
+    font-size: 25px;
   }
 
   #cv {
@@ -808,3 +812,8 @@ footer p {
   }
 }
 
+@media only screen and (max-height: 570px) {
+  #header-title {
+    height: 100%;
+  }
+}
