@@ -62,8 +62,8 @@ hamburger.addEventListener('keyup', (e) => {
     }
 });
 
-navList.addEventListener('click', (event) => {
-  if(event.target.tagName === 'A') {
+navList.addEventListener('click', (e) => {
+  if(e.target.tagName === 'A') {
     removeActive(hamburger);
     removeActive(navList);
     removeActive(socialLinks);
@@ -78,7 +78,7 @@ navList.addEventListener('click', (event) => {
 
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
-  if (prevScrollPos > currentScrollPos) {
+  if (prevScrollPos > currentScrollPos || currentScrollPos === 0) {
     document.querySelector('nav').style.top = "20px";
   } else {
     if(opened === false) {
