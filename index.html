@@ -122,13 +122,13 @@
       <h2 class="sub-title">Get in touch</h2>
       <p class="about-text">If you have any questions or you'd like to have a chat about a project, you can <a href="https://twitter.com/charlotterushen" target="_blank" class="link-hover-2">find me on twitter</a> or fill out the contact form below.</p>
       <div class="form-container">
-        <form id="contact-form">
+        <form id="contact-form" action="contact-form.php" method="POST">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="your_email@example.com">
           <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Your message" style="height:200px"></textarea>
+          <textarea id="message" name="message" placeholder="Your message" style="height:200px"></textarea>
         </form>
         <a href="#" id="submit-btn">Submit</a>
         <div class="submit-bg"></div>
