@@ -136,7 +136,7 @@ nav {
 }
 
 .page-links a:not(:first-child) {
-  padding-top: 2em;
+  margin-top: 2em;
 }
 
 .nav-links {
