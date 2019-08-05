@@ -352,6 +352,20 @@ input[type=text], input[type=email], textarea {
   color: #222;
 }
 
+#form-error {
+  color: #e5105b;
+  font-weight: 500;
+  margin-bottom: 32px;
+  display: none;
+}
+
+#form-thanks {
+  color: #10a0bc;
+  font-weight: 500;
+  margin-bottom: 32px;
+  display: none;
+}
+
 /* Footer */
 
 footer {

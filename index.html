@@ -129,10 +129,12 @@
           <input type="email" id="email" name="email" placeholder="your_email@example.com">
           <label for="subject">Subject</label>
           <textarea id="message" name="message" placeholder="Your message" style="height:200px"></textarea>
-          <input type="submit" value="submit">
-          <!--<a href="#" onclick="document.getElementById('my_form').submit();" id="submit-btn">Submit</a>-->
+          <p id="form-error">Please fill in all fields!</p>
+          <p id="form-thanks">Thanks! Your message has been received.</p>
+          <!-- <input type="submit" value="submit"> -->
+          <a href="javascript: submitForm()" id="submit-btn">Submit</a>
         </form>
-        <!--<div class="submit-bg"></div>-->
+        <div class="submit-bg"></div>
       </div>
     </section>
     <footer>
@@ -149,3 +151,5 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+<!-- href="javascript:{}" onclick="document.getElementById('contact-form').submit();" -->
