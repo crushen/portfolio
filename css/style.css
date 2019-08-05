@@ -797,8 +797,13 @@ footer p {
 }
 
 @media only screen and (max-width: 376px) {
-  #header-title {
-    height: 80%;
+
+  .hex-1 {
+    width: 100px;
+  }
+
+  .hex-2 {
+    width: 80px;
   }
 }
 
@@ -815,11 +820,5 @@ footer p {
     bottom: 5px;
     right: 10px;
     width: 100px;
-  }
-}
-
-@media only screen and (max-height: 570px) {
-  #header-title {
-    height: 100%;
   }
 }
