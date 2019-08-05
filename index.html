@@ -122,16 +122,17 @@
       <h2 class="sub-title">Get in touch</h2>
       <p class="about-text">If you have any questions or you'd like to have a chat about a project, you can <a href="https://twitter.com/charlotterushen" target="_blank" class="link-hover-2">find me on twitter</a> or fill out the contact form below.</p>
       <div class="form-container">
-        <form id="contact-form" action="contact-form.php" method="POST">
+        <form id="contact-form" action="contact-form.php" method="post">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="your_email@example.com">
           <label for="subject">Subject</label>
           <textarea id="message" name="message" placeholder="Your message" style="height:200px"></textarea>
+          <input type="submit" value="submit">
+          <!--<a href="#" onclick="document.getElementById('my_form').submit();" id="submit-btn">Submit</a>-->
         </form>
-        <a href="javascript:{}" onclick="document.getElementById('contact-form').submit();" id="submit-btn">Submit</a>
-        <div class="submit-bg"></div>
+        <!--<div class="submit-bg"></div>-->
       </div>
     </section>
     <footer>
