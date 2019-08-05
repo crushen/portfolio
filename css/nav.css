@@ -276,17 +276,17 @@ nav {
   @keyframes closeNav {
     0% {
       width: calc(100vw - 50px);
-      height: calc(100vh - 70px);
+      height: calc(100vh - 100px);
       border-radius: 5px;
     }
     25% {
       width: calc(100vw - 50px);
-      height: calc(100vh - 70px);
+      height: calc(100vh - 100px);
       border-radius: 5px;
     }
     50% {
       width: calc(100vw - 50px);
-      height: calc(100vh - 70px);
+      height: calc(100vh - 100px);
       border-radius: 5px;
     }
     75% {
@@ -318,12 +318,75 @@ nav {
     }
     75% {
       width: calc(100vw - 50px);
-      height: calc(100vh - 70px);
+      height: calc(100vh - 100px);
       border-radius: 5px;
     }
     100% {
       width: calc(100vw - 50px);
-      height: calc(100vh - 70px);
+      height: calc(100vh - 100px);
+      border-radius: 5px;
+    }
+  }
+}
+
+/* Small phones */
+@media only screen and (max-width: 500px) {
+
+  .navigation-list .nav-links {
+    font-size: 22px;
+  }
+
+  @keyframes closeNav {
+    0% {
+      width: calc(100vw - 50px);
+      height: calc(100vh - 120px);
+      border-radius: 5px;
+    }
+    25% {
+      width: calc(100vw - 50px);
+      height: calc(100vh - 120px);
+      border-radius: 5px;
+    }
+    50% {
+      width: calc(100vw - 50px);
+      height: calc(100vh - 120px);
+      border-radius: 5px;
+    }
+    75% {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+    }
+    100% {
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+    }
+  }
+
+  @keyframes openNav {
+    0% {
+      width: 60px;
+      height: 60px;
+    }
+    25% {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+    }
+    50% {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+    }
+    75% {
+      width: calc(100vw - 50px);
+      height: calc(100vh - 120px);
+      border-radius: 5px;
+    }
+    100% {
+      width: calc(100vw - 50px);
+      height: calc(100vh - 120px);
       border-radius: 5px;
     }
   }
