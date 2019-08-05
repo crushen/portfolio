@@ -276,17 +276,17 @@ nav {
   @keyframes closeNav {
     0% {
       width: calc(100vw - 50px);
-      height: calc(100vh - 50px);
+      height: calc(100vh - 70px);
       border-radius: 5px;
     }
     25% {
       width: calc(100vw - 50px);
-      height: calc(100vh - 50px);
+      height: calc(100vh - 70px);
       border-radius: 5px;
     }
     50% {
       width: calc(100vw - 50px);
-      height: calc(100vh - 50px);
+      height: calc(100vh - 70px);
       border-radius: 5px;
     }
     75% {
@@ -318,12 +318,12 @@ nav {
     }
     75% {
       width: calc(100vw - 50px);
-      height: calc(100vh - 50px);
+      height: calc(100vh - 70px);
       border-radius: 5px;
     }
     100% {
       width: calc(100vw - 50px);
-      height: calc(100vh - 50px);
+      height: calc(100vh - 70px);
       border-radius: 5px;
     }
   }
