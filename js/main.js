@@ -47,8 +47,9 @@ function submitForm() {
    }
    else {
       thanks.style.display = 'block';
-      form.preventDefault();
-      form.submit();
+      setTimeout(function() {
+         form.submit();
+      }, 3000);
    }
 }
 
